@@ -1,0 +1,17 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 生成的素材 PNG（运行 bake_sprites.py 生成）
+assets/sprites/*.png
+
+# 打包输出
+build/
+dist/
+*.spec
+
+# IDE / 系统
+.DS_Store
+*.swp
+*.swo
