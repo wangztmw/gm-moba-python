@@ -3,7 +3,7 @@ import math
 import pygame as pg
 from utils import get_font, alpha_surf
 from config import W, H
-from systems.sprite_cache import get_cache
+from display.sprite_cache import get_cache
 
 
 class Renderer:

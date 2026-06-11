@@ -314,7 +314,7 @@ def _run_test_connection(provider_id, api_key, api_url_override, model):
     global _test_result
     _test_result = 'testing'
     try:
-        from systems.llm_ai import LLMAIController
+        from ai.controller import LLMAIController
         success, msg, used_model = LLMAIController.test_connection(
             provider_id, api_key, api_url_override, model)
         _test_result = (success, msg, used_model)
@@ -383,7 +383,7 @@ def _fill_settings(settings, api_key, api_url, model, interval_str,
 
 def show_llm_setup(screen):
     global _test_result
-    from systems.llm_config import LLM_PROVIDERS, DEFAULT_LLM_SETTINGS
+    from ai.config import LLM_PROVIDERS, DEFAULT_LLM_SETTINGS
     import threading
 
     # 启用文本输入（macOS IME 支持）

@@ -14,12 +14,12 @@ from entities.crystal import Crystal
 from effects.projectile import Projectile
 from effects.floating_text import FloatingText
 from effects.loot_drop import LootDrop
-from systems.camera import Camera
-from systems.renderer import Renderer
-from systems.input_handler import InputHandler
-from systems.physics import PhysicsSystem
-from ui.hud import HUD
-from ui.minimap import Minimap
+from display.camera import Camera
+from display.renderer import Renderer
+from display.input_handler import InputHandler
+from physics.physics import PhysicsSystem
+from display.hud import HUD
+from display.minimap import Minimap
 
 
 class Game:
@@ -133,7 +133,7 @@ class Game:
                 self.physics.register(e)
 
         # LLM AI 控制器初始化
-        from systems.llm_ai import LLMAIController
+        from ai.controller import LLMAIController
         self.llm_ai = LLMAIController(self._llm_settings)
 
         self.spawn_minion_wave()

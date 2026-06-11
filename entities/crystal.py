@@ -118,7 +118,7 @@ class Crystal(Entity):
             surface.blit(s, (x - s.get_width() / 2, y - s.get_height() / 2))
             return
 
-        from systems.sprite_cache import get_cache
+        from display.sprite_cache import get_cache
         cache = get_cache()
         crys_surf = cache.get_crystal(self.team)
         surface.blit(crys_surf, (x - 40, y - 85 + int(bob)))

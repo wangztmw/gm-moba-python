@@ -63,7 +63,7 @@ class Monster(Entity):
         x, y = int(self.x + ox), int(self.y + oy)
         sway = int(math.sin(self.body_sway) * 2)
 
-        from systems.sprite_cache import get_cache
+        from display.sprite_cache import get_cache
         cache = get_cache()
         body_surf = cache.get_monster(self.type)
         if body_surf is None:

@@ -1367,7 +1367,7 @@ class Hero(Entity):
 
         # ---- CACHED 身体基部（body rect + 盔甲 + 头 + 帽子） ----
 
-        from systems.sprite_cache import get_cache
+        from display.sprite_cache import get_cache
         cache = get_cache()
         body_surf = cache.get_hero_body(self.hero_type)
         head_r = 9 if self.hero_type in ('paladin', 'warrior', 'berserker') else 8

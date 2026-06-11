@@ -6,7 +6,7 @@ import threading
 import urllib.request
 import urllib.error
 from config import LANES, BLUE_BASE, RED_BASE
-from systems.llm_config import (
+from ai.config import (
     LLM_PROVIDERS, SYSTEM_PROMPT, SNAPSHOT_TEMPLATE, DEFAULT_LLM_SETTINGS,
     HERO_STRATEGY_HINTS
 )

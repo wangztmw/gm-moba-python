@@ -160,7 +160,7 @@ class Minion(Entity):
         dx = self.x - self._prev_x
         facing = 1 if dx >= -0.1 else -1
 
-        from systems.sprite_cache import get_cache
+        from display.sprite_cache import get_cache
         cache = get_cache()
         minion_surf = cache.get_minion(self.team, self.type)
         sw = bw + 14

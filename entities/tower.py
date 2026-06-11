@@ -90,7 +90,7 @@ class Tower(Entity):
             pg.draw.circle(surface, (80, 80, 80), (x, y), 6)
             return
 
-        from systems.sprite_cache import get_cache
+        from display.sprite_cache import get_cache
         cache = get_cache()
         tower_surf = cache.get_tower(self.team)
         surface.blit(tower_surf, (x - 50, y - 118))

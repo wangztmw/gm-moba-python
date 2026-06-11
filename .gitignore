@@ -11,6 +11,12 @@ build/
 dist/
 *.spec
 
+# 运行时数据
+.llm_settings.json
+
+# Claude Code
+.claude/
+
 # IDE / 系统
 .DS_Store
 *.swp

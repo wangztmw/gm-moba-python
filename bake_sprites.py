@@ -23,11 +23,11 @@ def main():
     pg.init()
     pg.display.set_mode((1, 1))
 
-    from systems.sprite_cache import get_cache, _get_sprite_dir
+    from display.sprite_cache import get_cache, _get_sprite_dir
 
     # 构建所有 Surface
     print('\n▶ 构建缓存 Surface ...')
-    from systems.sprite_cache import SpriteCache
+    from display.sprite_cache import SpriteCache
     cache = SpriteCache()
     cache.build_all()
 
